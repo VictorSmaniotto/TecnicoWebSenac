@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cursos Senac Marília">
+    <title>Cursos</title>
+</head>
+<body>
+    <h1>Cursos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum quam quis adipisci incidunt, consectetur sint, explicabo nesciunt unde ab, ipsa in illum nostrum perspiciatis iusto fuga suscipit eveniet atque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quisquam repellendus pariatur vel repellat quaerat ab, atque nobis aspernatur veritatis voluptatum nostrum facere magni corporis illo. Officia, incidunt. Necessitatibus, magni.</p>
+
+    <table border="1"> <!--Tag utilizada para criar uma tabela-->
+        <caption>Lista de Cursos de 2022</caption> <!--Tag utilizada para dar título a um conjunto de dados da tabela-->
+        <thead> <!--Tag utilizada para identificar o cabeçalho de uma tabela-->
+            <tr> <!--cria uma linha na tabela (table row)-->
+                <th>Cursos</th> <!--Tag utilizada para criar células de cabeçalho-->
+                <th>Data</th>
+                <th>Vagas</th>
+            </tr> <!--fechamento da linha, cada item (th ou td) indica uma coluna criada-->
+        </thead>
+        <tbody> <!--tag utilizada para criar o corpo de uma tabela-->
+            <tr> <!--tag de linha-->
+                <td>Técnico em informática para Internet</td> <!--Tag utilizada para criar células dentro de uma linha, formando colunas-->
+                <td>02/02/2022</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Técnico em Estética</td>
+                <td>10/04/2022</td>
+                <td>22</td> <!--O atributo rowspan é usado para mesclar células em uma coluna vertical -->
+            </tr>
+            <tr>
+                <td>Técnico em Enfermagem</td>
+                <td>20/05/2022</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot> <!--Tag utilizada para criar o rodapé da tabela-->
+            <tr>
+                <td colspan="3">Temos vagas para bolsistas</td> <!--O atributo colspan é usado para mesclar celulas em uma linha horizontal-->
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
