@@ -18,20 +18,20 @@
                                     <!--O method é um atributo que informa como os dados serão atribuídos-->
         
         <fieldset>
-            <legend>Identificação do dono do Animal</legend>
+            <legend>Identificação do dono do Pet</legend>
         <p>
             <label for="nome">Nome: </label>
-            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required>
         </p>
 
         <p>
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+            <input type="email" name="email" id="email" placeholder="Digite seu E-mail" required >
         </p>
 
         <p>
             <label for="telefone">Telefone: </label>
-            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone" required>
         </p>
         <p>
             <label for="cep">CEP: </label>
@@ -90,10 +90,57 @@
         <!-- <label for="senha">Senha: </label>
         <input type="password" name="senha" id="senha"> -->             <!--shift + alt + a para comentar texto selecionado-->
 
-        <input type="submit">       
+        <!-- <input type="submit">        -->
         <fieldset>
             <legend>Pet</legend>
+            <p>
+                <label for="nomePet">Nome: </label>
+                <input type="text" name="nomePet" id="nomePet"  placeholder="Digite o nome do Pet" required>
+            </p>
+            <p>
+                <strong>Porte do Pet</strong><br>
+
+                <label><input type="radio" name="portePet" required> Pequeno</label>
+                <label><input type="radio" name="portePet" required> Médio</label>
+                <label><input type="radio" name="portePet" required> Grande</label>
+            </p>
+            <p>
+                <label for="tipoTosa">Tipo de Tosa</label>
+                <select name="tipoTosa" id="tipoTosa" required>
+                    <option value="">Nenhum</option>
+                    <option value="padrao">Tosa Padrão</option>
+                    <option value="higienica">Tosa Higiênica</option>
+                    <option value="tesoura">Tosa na Tesoura</option>
+                    <option value="raca">Tosa da Raça</option>
+                    <option value="bebe">Tosa Bebê</option>
+                </select>
+            </p>
+            <p>
+                <label for="observacoes">Observações</label>
+                <textarea name="observacoes" id="observacoes" rows="5" cols="30"></textarea>
+            </p>
         </fieldset>  
+
+        <fieldset>
+            <legend>Horário</legend>
+            <p>
+                Indique os dias da semana da sua preferência: 
+            <label><input type="checkbox" name="diaSemana[]">Segunda-Feira</label>
+            <label><input type="checkbox" name="diaSemana[]">Terça-Feira</label>
+            <label><input type="checkbox" name="diaSemana[]">Quarta-Feira</label>
+            <label><input type="checkbox" name="diaSemana[]">Quinta-Feira</label>
+            <label><input type="checkbox" name="diaSemana[]">Sexta-Feira</label>
+            <label><input type="checkbox" name="diaSemana[]">Sábado</label>
+            </p>
+            <p>
+                <label for="dataPrimeira">Primeira opção de horário</label>
+                <input  type="datetime-local" name="dataPrimeira" id="dataPrimeira" required>
+            </p>
+            <p>
+                <label for="dataSegunda">Segunda opção de horário</label>
+                <input type="datetime-local" name="dataSegunda" id="dataSegunda"required>
+            </p>
+        </fieldset>
         <!-- <input type="submit" value="Agendar">  -->
         <button type="submit">Agendar</button>
     
