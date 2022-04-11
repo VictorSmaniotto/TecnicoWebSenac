@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Atividade 3 - Texto, Tabela, Formulário">
+    <meta name="keywords" content="Atividade, curriculo, tabela, formulário">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <h1>CURRÍCULO</h1>
+    <h2>RODRIGO CARDOSO</h2>
+    <img src="img/foto.jpg" alt="Foto 3x4" width="150">
+
+    <p><strong>Informações necessárias</strong></p>
+    <p><strong>Empresa: </strong>MC' DONALDS.</p>
+    <p><strong>Cargo: </strong>Assistente de RH</p>
+    <p><strong>Período: </strong>Jan 2019 - Ago 2019</p>
+    <p><strong>Breve descrição das funções realizadas: </strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur sequi aliquid corrupti iusto, necessitatibus, beatae error eius recusandae vel, eum nulla? Perspiciatis eveniet asperiores excepturi inventore. Sint in minus et?</p>
+
+    <h3>GRADE DE CURSOS</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Cursos</th>
+                <th>Matrícula</th>
+                <th>Horário</th>
+                <th>Vagas remanescentes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Libras (tarde)</td>
+                <td>25/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>05</td>
+            </tr>
+            <tr>
+                <td>Desenhista de Moda (manhã)</td>
+                <td>26/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>02</td>
+            </tr>
+            <tr>
+                <td>Desenhista de Moda (tarde)</td>
+                <td>26/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>08</td>
+            </tr>
+            <tr>
+                <td>Manicure e Pedicure (manhã)</td>
+                <td>27/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>07</td>
+            </tr>
+            <tr>
+                <td>Vendedor (manhã)</td>
+                <td>28/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Consultoria de Imagem (manhã)</td>
+                <td>28/09/2018</td>
+                <td>08h30 às 17h</td>
+                <td>04</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>FORMULÁRIO DE PESQUISA</h3>
+    <form action="#" method="get">
+        <fieldset>
+            <legend><strong>Formulário</strong></legend>
+            <p>
+                <label for="nome"><strong>Nome: </strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </p>
+            <p>
+                <label for="email"><strong>E-mail: </strong></label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            </p>
+
+            <p>
+                <label for="telefone"><strong>Telefone: </strong></label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000 0000" required>
+            </p>
+
+            <p>
+                <label for="idade"><strong>Idade: </strong></label>
+                <select name="idade" id="idade">
+                    <!-- <option value="selecione">selecione</option> -->
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18" selected>18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </p>
+            <p>
+                <label for="sexo"><strong>Sexo: </strong></label>
+            </p>
+
+            <p>
+                <label><input type="radio" name="sexo" required><strong>M</strong></label>
+                <label><input type="radio" name="sexo" required><strong>F</strong></label>
+            </p>
+
+            <p><strong>Tipo de navegador utilizado: </strong></p>
+            <p>
+                <label><input type="checkbox" name="navegador"><strong>Google Chrome</strong></label>
+                <label><input type="checkbox" name="navegador"><strong>Internet Explorer</strong></label>
+                <label><input type="checkbox" name="navegador"><strong>Firefox</strong></label>
+                <label><input type="checkbox" name="navegador"><strong>Safari</strong></label>
+                <label><input type="checkbox" name="navegador"><strong>Outros</strong></label>
+            </p>
+
+            <!-- <p><strong>Mensagem: </strong></p> -->
+            <p><label for="mensagem"><strong>Mensagem: </strong></label></p>
+            <p>
+                <textarea name="mensagem" id="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem...." required></textarea>
+            </p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
