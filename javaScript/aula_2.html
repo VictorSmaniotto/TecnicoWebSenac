@@ -26,9 +26,29 @@
 
         var nota1 = parseFloat(prompt("Digite a primeira nota"))
         var nota2 = parseFloat(prompt("Digite a segunda nota"))
+        var nota3 = parseFloat(prompt("Digite a terceira nota"))
+        var nota4 = parseFloat(prompt("Digite a quarta nota"))
 
-        var media = (nota1 + nota2) / 2
-        console.log(media)
+
+        var media = (nota1 + nota2 + nota3 + nota4) / 4
+         console.log(media)
+
+        if(media <= 5.9){
+            alert("Aluno Reprovado")
+        }else if(media <= 6.9){
+            alert("Recuperação")
+        }else{
+            alert("Aluno Aprovado")
+        }
+
+        // if (media >= 7){
+        //     alert("Aluno Aprovado")
+        // }else if(media < 7){
+        //     alert("Recuperação")
+        // } else if(media <= 5.9){
+        //     alert("Aluno Reprovado")
+        // }
+
     </script>
 </body>
 </html>
