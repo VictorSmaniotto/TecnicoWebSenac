@@ -9,8 +9,10 @@
 <body>
     <script type="text/javascript">
         //Algoritmo que receba um valor e imprima se é par ou ímpar
-        var num = parseFloat(prompt("Digite um número "))
-        if(num%2==0)
+        var num = parseFloat(prompt("Digite um número diferente de zero"))
+        if(num==0){
+            alert("0 Não é um número válido, recarregue a página")
+        } else if(num%2==0)
         {
             alert("O número " + num + " é PAR")
         } else{
