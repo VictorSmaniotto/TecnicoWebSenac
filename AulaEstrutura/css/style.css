@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+}
+
+#cabecalho
+{
+    background-color: #ededed;
+}
+#logotipo
+{
+    text-align: center;
+}
+
+#logotipo img
+{
+    width: 150px;
+}
+
+.titulo
+{
+    text-align: center;
+}
+#menu
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    ;
+}
+#menu ul
+{
+    background: #f7941d;
+    list-style: none;
+    text-align: center;
+}
+
+#menu ul li
+{
+    display: inline-block;
+}
+
+#menu ul li a
+{
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+#menu ul li a:hover
+{
+    background-color: #fcb055;
+}
+
+footer
+{
+    background-color: #f7941d;
+    text-align: center;
+    color: #fff;
+}
