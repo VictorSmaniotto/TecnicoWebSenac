@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Atividade da aula 5 - Switch case com JS">
+    <meta name="keywords" content="Atividade, aula 4, javascript, switch case"> 
+    <title>Aula 5 - javascript switch case</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Desenvolva um Programa que verifique se uma letra digitada pelo usuário é “A, NA, D, ND” utilizando a sintaxe do Switch(). Conforme a letra informada pelo usuário escrever:
+
+        // •A – Atendido
+        // •NA – Não Atendido
+        // •D – Desenvolvido
+        // •ND – Não Desenvolvido
+        // •Letra Inválida
+
+
+        let letra = prompt('Digite uma letra')
+        // let maiuscula = letra.toLocaleUpperCase()
+        // console.log(letra, maiuscula)
+        
+        // switch(maiuscula)
+        switch(letra)
+        {
+            case 'A': 
+                alert('Atendido')
+                break
+            case 'NA':
+                alert('Não Atendido')
+                break
+            case 'D':
+                alert('Desenvolvido')
+                break
+            case 'ND':
+                alert('Não Desenvolvido')
+                break
+            default:
+                alert('Letra Inválida')
+        }
+
+    </script>
+</body>
+</html>
