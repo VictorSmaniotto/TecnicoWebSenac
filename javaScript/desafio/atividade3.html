@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aula 4 de JavaScript - Estrutura Condicional ">
+    <meta name="keywords" content="Aula 4, JavaScript, variáveis, Estrutura Condicional">
+    <title>Desafio 3 - Estrutura Condicional</title>
+</head>
+<body>
+    <h1>Atividade 1 - Laço de Repetição</h1>
+    <p>Escreva um programa que pergunte ao usuário quantos alunos tem na sala dele. 
+        Em seguida, através de um laço, pede ao usuário para que entre com as notas 
+        de todos os alunos da sala, um por vez. Por fim, o programa mostra a média, 
+        aritmética, da turma.
+        </p>
+    <script type="text/javascript">
+        var alunos = prompt("Quantos alunos tem na sua classe? ")
+        var somaNota = 0;
+        var i = 1;
+       while(i <= alunos)
+       {
+           var nota = parseInt(prompt("Informe a nota"+i+"º aluno"))
+           somaNota = somaNota + nota
+           i++
+           console.log(somaNota)
+       }
+    </script>
+</body>
+</html>
